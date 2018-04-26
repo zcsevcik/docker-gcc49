@@ -10,6 +10,9 @@ RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sou
     gdbserver \
     make \
     pkg-config \
+    make \
+    cmake \
+    gcovr \
     && \
 
     rm -rf /var/lib/apt/lists/*
