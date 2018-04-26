@@ -1,7 +1,8 @@
 FROM debian:jessie-slim
 LABEL maintainer "zcsevcik@gmail.com"
 
-RUN apt-get update && apt-get install --no-install-recommends -y \
+RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/backports.list && \
+    apt-get update && apt-get install --no-install-recommends -y \
     build-essential \
     gcc \
     g++ \
