@@ -17,7 +17,7 @@ RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sou
     gcovr \
     && \
 
-    DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y -t jessie-backports
+    DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y -t jessie-backports \
     cmake \
     && \
 
